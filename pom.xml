@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.formation</groupId>
-	<artifactId>formation-spring-security</artifactId>
+	<artifactId>formation-spring-security-oauth2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>formation-spring-security</name>
+	<name>formation-spring-security-oauth2</name>
 	<description>Formation Spring Security</description>
 	<url/>
 	<licenses>
