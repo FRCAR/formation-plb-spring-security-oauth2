@@ -14,8 +14,8 @@ public class ControleurDeBase {
 
 	
 	/**
-	 * Intercepte les requêtes /salut , effectue des instructions (ici un simple
-	 * System.out) puis renvoie vers la vue salut.
+	 * Intercepte les requêtes / , effectue des instructions (ici un simple
+	 * System.out) puis renvoie vers la vue index.
 	 * 
 	 * @return
 	 */
@@ -23,6 +23,19 @@ public class ControleurDeBase {
 	public String showIndex() {
 		System.out.println("Utilisateur : " + SecurityContextHolder.getContext().getAuthentication());
 		return "index";
+	}
+
+	
+	/**
+	 * Intercepte les requêtes /protected , effectue des instructions (ici un simple
+	 * System.out) puis renvoie vers la vue vers la vue protected.
+	 * 
+	 * @return
+	 */
+	@RequestMapping(path = "/protected", method = RequestMethod.GET)
+	public String showProtected() {
+		System.out.println("Utilisateur : " + SecurityContextHolder.getContext().getAuthentication());
+		return "protected";
 	}
 
 }

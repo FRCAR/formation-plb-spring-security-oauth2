@@ -1,0 +1,14 @@
+spring.application.name=formation-spring-security-oauth2
+spring.security.oauth2.client.registration.google.client-id=formation-spring-security
+spring.security.oauth2.client.registration.google.client-secret=9tfv5bqsyROyFIJpVeTLjJYENdKQeQ5U
+logging.level.org.springframework.web.client.RestTemplate=DEBUG
+
+## keycloak
+spring.security.oauth2.client.provider.external.issuer-uri=http://localhost:8099/realms/application-booking
+
+spring.security.oauth2.client.registration.external.provider=external
+spring.security.oauth2.client.registration.external.client-name=formation-spring-security
+spring.security.oauth2.client.registration.external.client-id=formation-spring-security
+spring.security.oauth2.client.registration.external.client-secret=9tfv5bqsyROyFIJpVeTLjJYENdKQeQ5U
+spring.security.oauth2.client.registration.external.scope=openid,offline_access,profile,application-spring
+spring.security.oauth2.client.registration.external.authorization-grant-type=authorization_code
